@@ -1,19 +1,19 @@
-# ubuntu-gdm-set-background script (for changing Ubuntu 20.04, 21.04 & 21.10 GDM Background) HELP
+# ubuntu-gdm-set-background script
 
 Download the script with below command
 
-
-````
+````bash
 wget -qO - https://github.com/PRATAP-KUMAR/ubuntu-gdm-set-background/archive/main.tar.gz | tar zx --strip-components=1 ubuntu-gdm-set-background-main/ubuntu-gdm-set-background
 ````
 
-there are four options
+There are four options
+
 1. background with image
 2. background with color
 3. background with gradient horizontal ( requires two valid hex color inputs)
 4. background with gradient vertical ( requires two valid hex color inputs)
 
-tip: be ready with valid hex color code in place of below example like #aAbBcC or #dDeEfF. Change them to your preffered hex color codes.
+Tip: be ready with valid hex color code in place of below example like #aAbBcC or #dDeEfF. Change them to your preffered hex color codes.
 you may choose colors from https://www.color-hex.com/
 
 Example Commands:
@@ -62,4 +62,3 @@ Please note that for 'RESCUE_MODE' active internet connection is necessary
 ![11](https://user-images.githubusercontent.com/40719899/138041974-e229d7a4-9950-4eec-b837-716d7947b192.png)
 
 ![12](https://user-images.githubusercontent.com/40719899/138041976-8c6f1f36-a32c-4ed3-993d-22fe66a9fc42.png)
-

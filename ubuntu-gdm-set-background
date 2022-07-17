@@ -190,10 +190,10 @@ No need, Already Reset. ${Red}(or unlikely background is not set using this Scri
       cd /usr/local/share
       rmdir --ignore-fail-on-non-empty -p gnome-shell/custom-gdm
       echo -e "${Gre}
-      		---------------
-		  		|Reset Success|
-		  		---------------
-		  		Changes will be effective after a Reboot ${RCol}"
+---------------
+|Reset Success|
+---------------
+Changes will be effective after a Reboot ${RCol}"
       exit 1
     fi
   ;;
@@ -239,8 +239,7 @@ $ ./ubuntu-gdm-set-background --help${RCol}"
   ;;
   --color)
     if [ -z "$2" ]; then
-      echo -e "${Red}Color is not provided.
-      Use ${BWhi}\$ sudo ./ubuntu-gdm-set-background --color #aee02a${RCol} to set ${BWhi}#aee02a${RCol} as the background color.${RCol}"
+      echo -e "${Red}Color is not provided.\n\n${RCol}Use ${BWhi}\$ sudo ./ubuntu-gdm-set-background --color #aee02a${RCol} to set ${BWhi}#aee02a${RCol} as the background color.${RCol}"
       exit 1
     fi
     if ! [[ $2 =~ ^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$ ]]; then
@@ -318,7 +317,7 @@ background-gradient-end: '$4'; }' >$GDM_RESOURCE_CONFIG_NAME.css
   exit 1
   ;;
   *) 
-    echo -e "Use the options ${BWhi}--image |--color | --gradient | --help | --reset${RCol}"
+    echo -e "Use the options ${BWhi}--image | --color | --gradient | --help | --reset${RCol}"
     exit 1
   ;;
 esac
